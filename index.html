@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Encryptor Text</title>
 </head>
 <body>
     <div class="container">
@@ -13,9 +14,23 @@
         <div class="terminos">
             <p>Solo letras en minúsculas y sin acentos</p>
         </div>
-        <div class="botones"></div>
+        <div class="btns">
+            <button class="btn-encryptor" type="button" onclick="encryptor()">Encryptor</button>
+            <button class="btn-decrypt" type="button" value="decrypt" onclick="decrypt()">Decrypt</button>
+        </div>
+        <div class="encryptor">
+            <img src="" alt="" id="img">
+            <div class="encrypt-message" id="encrypt-message">
+                <h2 id="title">No messages found</h2>
+                <p id="p">Enter the message you want to decrypt</p>
+                <textarea name="message" id="message" cols="30" rows="10" class="message" ></textarea>
+            </div>
+        </div>
     </div>
     
+
+
+    <!-- https://github.com/atherosai/ui?tab=readme-ov-file -->
 </body>
 <script src="index.js"></script>
 </html>
